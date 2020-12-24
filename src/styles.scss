@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@swimlane/ngx-ui/lib/styles/colors/index.scss';
+@import '../node_modules/@swimlane/ngx-ui/lib/styles/components/index.scss';
+@import '../node_modules/@swimlane/ngx-ui/lib/styles/fonts/index.scss';
+@import '../node_modules/@swimlane/ngx-ui/lib/styles/forms/index.scss';
+@import '../node_modules/@swimlane/ngx-ui/lib/styles/layouts/index.scss';
+@import '../node_modules/@swimlane/ngx-ui/lib/styles/themes/index.scss';
+@import '../node_modules/@swimlane/ngx-ui/lib/styles/typography/index.scss';
+@import '../node_modules/@swimlane/ngx-ui/lib/styles/vendor/index.scss';
+@import '../node_modules/@swimlane/ngx-ui/lib/assets/icons/iconfont/scss/nucleo.scss';
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+
