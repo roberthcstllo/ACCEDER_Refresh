@@ -1,0 +1,134 @@
+<div class="">
+
+  <div class="ngx-flex--row">
+
+
+    <div class="ngx-flex--col-3">
+      <div class="box_info_acceder">
+        <div>
+          <img class="word_illustration" src="assets/image/wordinfo.png">
+          <p class="text1_info">Asociación Ciudadana ACCEDER (Acciones estratégicas por los Derechos Humanos) está
+            conformada por un equipo multidisciplinario que se dedica al litigio estratégico, incidencia jurídica y
+            política, creación de capacidades, estrategias de transformación cultural y al liderazgo social para
+            prevenir y erradicar la violencia y la discriminación basadas en el género, la orientación sexual y la
+            identidad de género.</p>
+          <p class="text2_info">Nuestra estrategia parte del análisis crítico de las circunstancias actuales, a la luz
+            de la historia de
+            los Derechos Humanos, para asegurar el paso hacia la igualdad real.</p>
+
+          <div class="ngx-flex--row">
+            <div class="ngx-flex--col-3">
+            </div>
+            <div class="ngx-flex--col-2">
+              <a href="https://www.instagram.com/accedercr/" target="_blank"><img class="icon_white_sm"
+                                                                                  src="assets/image/instagramiconwhite.png"></a>
+            </div>
+
+            <div class="ngx-flex--col-2">
+              <a href="https://www.facebook.com/accedercr" target="_blank"><img class="icon_white_sm"
+                                                                                src="assets/image/facebookiconwhite.png"></a>
+            </div>
+
+            <div class="ngx-flex--col-2">
+              <a href="https://twitter.com/AccederCR" target="_blank"><img class="icon_white_sm"
+                                                                           src="assets/image/twittericonwhite.png"></a>
+            </div>
+            <div class="ngx-flex--col-3">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ngx-flex--col-9">
+
+
+      </div>
+
+    </div>
+    <div class="ngx-flex--col-9">
+      <h1 class="title_people">JUNTA DIRECTIVA</h1>
+
+      <div class="ngx-flex--row">
+
+
+        <div class="ngx-flex--col-2" *ngFor="let boxpeople of positions">
+
+          <div class="box_people">
+            <img class="photo_box" src="{{boxpeople.photo}}">
+            <h3 class="name_people_box">{{boxpeople.name}}</h3>
+            <h4 class="position_people_box">{{boxpeople.position}}</h4>
+            <h5 class="mail_people_box">{{boxpeople.mail}}</h5>
+            <button type="button" class="btn btn-bordered btn_people" data-bs-toggle="modal"
+                    [attr.data-bs-target]="'#modal' + boxpeople.id">Leer Más
+            </button>
+          </div>
+
+          <div class="modal fade" [attr.id]="'modal' + boxpeople.id" data-bs-backdrop="static" data-bs-keyboard="false"
+               tabindex="-1"
+               aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                  <div class="ngx-flex--row">
+                    <div class="ngx-flex--col-3">
+                      <img class="photo_modal" src="{{boxpeople.photo}}">
+                    </div>
+
+                    <div class="ngx-flex--col-9">
+                      <h3 class="name_modal">{{boxpeople.name}}</h3>
+                      <h4 class="position_modal">{{boxpeople.position}}</h4>
+                      <div class="ngx-flex--row">
+                        <div class="ngx-flex--col-1"  style="line-height: 2; text-align: right;"><mat-icon> mail_outline</mat-icon></div>
+                        <div class="ngx-flex--col-10"><h5 class="mail_modal">{{boxpeople.mail}}</h5></div>
+                      </div>
+
+                      <p class="text_modal">{{boxpeople.text}}</p>
+
+                    </div>
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <h1 class="title_people title_people2">NUESTRO EQUIPO</h1>
+
+      <div class="ngx-flex--row">
+
+
+        <div class="ngx-flex--col-2" *ngFor="let boxteam of teams">
+
+          <div class="ngx-flex--row">
+
+
+          </div>
+          <div class="box_people">
+            <img class="photo_box" src="{{boxteam.photo}}">
+            <h3 class="name_people_box">{{boxteam.name}}</h3>
+            <h4 class="position_people_box">{{boxteam.position}}</h4>
+            <h5 class="mail_people_box">{{boxteam.mail}}</h5>
+            <span class="decor_box_people"></span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>

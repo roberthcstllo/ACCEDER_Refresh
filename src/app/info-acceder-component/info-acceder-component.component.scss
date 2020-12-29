@@ -1,0 +1,139 @@
+.box_info_acceder {
+  background-color: #a676e5;
+  height: 105vh;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+}
+
+.word_illustration {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+.text1_info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 90%;
+  font-weight: 500;
+  color: white;
+  margin: 8%;
+}
+
+.text2_info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 90%;
+  font-weight: 300;
+  color: white;
+  margin: 8%;
+}
+
+.icon_white_sm {
+  width: 70%;
+  margin: 15%;
+}
+
+.title_people {
+  font-family: 'Roboto', sans-serif;
+  font-size: 150%;
+  font-weight: 300;
+}
+
+.title_people2 {
+  margin-top: 5%;
+}
+
+.box_people {
+  background-color: white;
+  margin-top: 5%;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -webkit-box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
+  -moz-box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
+  box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
+}
+
+.photo_box {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.name_people_box {
+  font-family: 'Roboto', sans-serif;
+  font-size: 75%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.position_people_box {
+  font-family: 'Roboto', sans-serif;
+  font-size: 90%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.mail_people_box {
+  font-family: 'Roboto', sans-serif;
+  font-size: 80%;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1px;
+}
+
+.btn_people {
+  color: black;
+  border-color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.btn_people:hover {
+  background-color: #a676e5;
+  color: white;
+  border-color: white;
+}
+
+.decor_box_people {
+  display: block;
+  width: 70%;
+  margin-left: 15%;
+  background-color: white;
+  height: 18px;
+  margin-top: 5%;
+}
+
+.photo_modal {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.name_modal {
+  font-family: 'Roboto', sans-serif;
+  font-size: 155%;
+  font-weight: 500;
+}
+
+.position_modal {
+  font-family: 'Roboto', sans-serif;
+  font-size: 140%;
+  font-weight: 300;
+}
+
+.mail_modal {
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
+  font-weight: 500;
+}
+
+.text_modal {
+  font-family: 'Roboto', sans-serif;
+  font-size: 80%;
+  font-weight: 500;
+}

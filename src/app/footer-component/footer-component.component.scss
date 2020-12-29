@@ -1,0 +1,41 @@
+.logo_footer {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.icon_contac {
+  color: white;
+  font-size: 150%;
+  text-align: right;
+  line-height: 2;
+}
+
+.mail_info {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 120%;
+  color: white;
+  margin-left: -10%;
+  margin-top: 4%;
+}
+
+.social_contac_icon {
+  width: 8%;
+  margin-right: 3%;
+  margin-top: 5%;
+}
+
+.footer_menu {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 85%;
+  line-height: 2;
+}
+
+.btn_menu_link_footer:hover, .btn_menu_link_footer:visited, .btn_menu_link_footer:link, .btn_menu_link_footer:active {
+  color: white;
+}

@@ -1,0 +1,45 @@
+.source_box {
+  background-color: white;
+  margin-top: 3%;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -webkit-box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
+  -moz-box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
+  box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
+}
+
+.title_section_resource {
+  font-family: 'Roboto', sans-serif;
+  font-size: 150%;
+  font-weight: 300;
+  margin-top: 15%;
+}
+
+.filepic {
+  width: 55%;
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.title_resource {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  margin-top: 5%;
+}
+
+
+.btn_source {
+  background-color: #a676e5;
+  border-color: #522877;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-top: 20%;
+}
+
+.btn_source:hover {
+  background-color: #522877;
+}
