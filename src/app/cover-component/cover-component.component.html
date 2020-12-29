@@ -1,35 +1,92 @@
 <div class="ngx-flex--wrap">
 
-<div class="ngx-flex--row" >
+  <div class="ngx-flex--row" style="height: 100vh;">
 
 
-  <div class="ngx-flex--col-7">
-    <img src="assets/image/cover_illustration.png" class="illustration">
-  </div>
+    <div class="ngx-flex--col-7">
+      <img src="assets/image/cover_illustration.png" class="illustration">
+      <h1 class="title_cover1">TODOS LOS DERECHOS</h1>
+      <h2 class="title_cover2">PARA TODAS LAS PERSONAS</h2>
+    </div>
 
-  <div class="ngx-flex--col-5">
-    <div class="ngx-flex--row">
-      <div class="ngx-flex--col-6">
+    <div class="ngx-flex--col-5">
+      <h3 class="title_topic">NUESTROS TEMAS DE TRABAJO</h3>
 
-        <div class="ngx-flex--row box_container">
-          <div class="ngx-flex--col-4">
-            <img src="assets/image/simbol.png" class="simbol">
-          </div>
 
-          <div class="ngx-flex--col-8">
+      <div class="ngx-flex--row">
+        <div class="ngx-flex--col-6" *ngFor="let boxtopic of topics">
+          <div class="box_container">
+            <div class="ngx-flex--row">
+              <div class="ngx-flex--col-4">
+                <img src="{{boxtopic.image}}" class="simbol">
+              </div>
 
-            <div class="ngx-flex--row ">
-              <div class="ngx-flex--col-12"><h2 class="text_in_box">recopilación de laos datos de las fuentes </h2> </div>
-              <div class="ngx-flex--col-12"><button type="button" class="btn btn-bordered" style="color: black; border-color: black;">Ver Proyectos</button></div>
+              <div class="ngx-flex--col-8">
+
+                <div class="ngx-flex--row ">
+                  <div class="ngx-flex--col-12"><h2 class="text_in_box">{{boxtopic.name}}</h2></div>
+                  <div class="ngx-flex--col-12">
+
+                    <button [attr.data-bs-target]="'#modal' + boxtopic.id" type="button"
+                            class="btn btn-bordered btn_box_topic" data-bs-toggle="modal">
+                      Ver Proyectos
+                    </button>
+
+                  </div>
+                </div>
+
+
+              </div>
+
             </div>
 
-
           </div>
 
-        </div>
+          <div class="modal fade" [attr.id]="'modal' + boxtopic.id" data-bs-backdrop="static" data-bs-keyboard="false"
+               tabindex="-1"
+               aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
 
+                <div class="modal-body">
+                  <div class="ngx-flex--row">
+
+                    <div class="ngx-flex--col-2"></div>
+
+                    <div class="ngx-flex--col-8">
+                      <img src="{{boxtopic.image}}" class="image_modal">
+                      <h1 class="modal_title_main">{{boxtopic.name}}</h1>
+                    </div>
+                  </div>
+
+                  <div class="ngx-flex--col-2"></div>
+
+                  <div class="ngx-flex--row">
+                    <div class="ngx-flex--col-10 ngx-flex--col-offset-1">
+                      <div class="modal_doc_box" *ngFor="let modaldocs of boxtopic.titledoc">
+                        <div class="ngx-flex--row">
+
+                          <div class="ngx-flex--col-1">
+                            <img src="assets/image/filebasic.png" class="image_doc">
+                          </div>
+                          <div class="ngx-flex--col-8">
+                            <h3 class="title_doc">{{modaldocs}}</h3>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
