@@ -28,6 +28,7 @@
 }
 
 .footer_menu {
+  display: block;
   list-style: none;
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -38,4 +39,55 @@
 
 .btn_menu_link_footer:hover, .btn_menu_link_footer:visited, .btn_menu_link_footer:link, .btn_menu_link_footer:active {
   color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo_footer {
+    width: 30%;
+    margin-left: 20%;
+    margin-top: 30%;
+    margin-bottom: 00%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .logo_footer {
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 50%;
+    margin-bottom: 00%;
+  }
+
+}
+
+@media only screen and (max-width: 760px) {
+  .logo_footer {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .icon_contac {
+    font-size: 180%;
+    line-height: 1;
+  }
+
+  .mail_info {
+    font-size: 130%;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+
+  .social_contac_icon {
+    width: 15%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .footer_menu {
+    display: none;
+  }
+
 }

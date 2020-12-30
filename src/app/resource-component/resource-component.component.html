@@ -1,28 +1,83 @@
 <div class="ngx-flex--row">
 
-  <div class="ngx-flex--col-6">
+  <div class="ngx-flex--col-12 ngx-flex--col-md-5 ngx-flex--col-lg-6">
     <img src="assets/image/resource_illustration.png" style="width: 100%; margin-top: 15%; margin-bottom: 12%;">
   </div>
 
-  <div class="ngx-flex--col-6">
+  <div class="ngx-flex--col-12 ngx-flex--col-md-7 ngx-flex--col-lg-6">
     <h1 class="title_section_resource">RECURSOS Y MATERIALES</h1>
     <div class="ngx-flex--row">
 
-      <div class="ngx-flex--col-12" *ngFor="let resourcebox of documentboxs">
+      <div class="ngx-flex--col-6 ngx-flex--col-sm-3 ngx-flex--col-md-12" *ngFor="let resourcebox of documentboxs">
 
         <div class="source_box">
           <div class="ngx-flex--row">
 
-            <div class="ngx-flex--col-2">
+            <div class="ngx-flex--col-12 ngx-flex--col-md-2">
               <img class="filepic" src="{{resourcebox.image}}">
             </div>
 
-            <div class="ngx-flex--col-7">
+            <div class="ngx-flex--col-11 ngx-flex--col-md-7">
               <h2 class="title_resource">{{resourcebox.title}}</h2>
             </div>
 
-            <div class="ngx-flex--col-3">
-              <button type="button" class="btn btn-bordered btn_source">Ver Documentos</button>
+            <div class="ngx-flex--col-12 ngx-flex--col-md-3">
+              <button type="button" class="btn btn-bordered btn_source" data-bs-toggle="modal"
+                      [attr.data-bs-target]="'#modal' + resourcebox.id">Ver Documentos
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="modal fade" [attr.id]="'modal' + resourcebox.id" data-bs-backdrop="static" data-bs-keyboard="false"
+             tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <div class="ngx-flex--row">
+
+                  <div class="ngx-flex--col-1 ngx-flex--col-md-3"></div>
+
+                  <div class="ngx-flex--col-10 ngx-flex--col-md-6">
+                    <img src="{{resourcebox.image}}" class="image_modal_source">
+                    <h1 class="modal_title_main_source">{{resourcebox.title}}</h1>
+                  </div>
+                </div>
+
+                <div class="ngx-flex--col-1 ngx-flex--col-md-3"></div>
+
+                <div class="ngx-flex--row">
+                  <div class="ngx-flex--col-10 ngx-flex--col-offset-1">
+                    <div class="modal_doc_box_source" *ngFor="let docsource of resourcebox.doctitlesource">
+                      <div class="ngx-flex--row">
+
+                        <div class="ngx-flex--col-2 ngx-flex--col-md-2">
+                          <img src="assets/image/filebasic.png" class="image_doc_source">
+                        </div>
+                        <div class="ngx-flex--col-8 ngx-flex--col-md-9">
+                          <h3 class="title_doc_source">{{docsource}}</h3>
+                        </div>
+                        <div class="ngx-flex--col-2 ngx-flex--col-md-1">
+                          <mat-icon class="icon_open_pdf">open_in_new</mat-icon>
+                          <h3 class="open_pdf_text_icon">Abrir</h3>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="modal-footer">
+                <span class="decor_footer_modal"></span>
+              </div>
             </div>
 
           </div>

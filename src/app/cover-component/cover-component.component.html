@@ -1,30 +1,33 @@
 <div class="ngx-flex--wrap">
 
-  <div class="ngx-flex--row" style="height: 100vh;">
+  <div class="ngx-flex--row father_cover">
 
 
-    <div class="ngx-flex--col-7">
+    <div class="ngx-flex--col-12 ngx-flex--col-md-4 ngx-flex--col-lg-7">
+      <img src="assets/image/logo.png" class="logo_mobile">
       <img src="assets/image/cover_illustration.png" class="illustration">
       <h1 class="title_cover1">TODOS LOS DERECHOS</h1>
       <h2 class="title_cover2">PARA TODAS LAS PERSONAS</h2>
     </div>
 
-    <div class="ngx-flex--col-5">
+    <div class="ngx-flex--col-12 ngx-flex--col-md-8 ngx-flex--col-lg-5">
       <h3 class="title_topic">NUESTROS TEMAS DE TRABAJO</h3>
 
 
       <div class="ngx-flex--row">
-        <div class="ngx-flex--col-6" *ngFor="let boxtopic of topics">
+        <div class="ngx-flex--col-6 ngx-flex--col-sm-3 ngx-flex--col-md-6" *ngFor="let boxtopic of topics">
           <div class="box_container">
             <div class="ngx-flex--row">
-              <div class="ngx-flex--col-4">
+              <div class="ngx-flex--col-12 ngx-flex--col-md-3 ngx-flex--col-lg-4">
                 <img src="{{boxtopic.image}}" class="simbol">
               </div>
 
-              <div class="ngx-flex--col-8">
+              <div class="ngx-flex--col-12 ngx-flex--col-md-9 ngx-flex--col-lg-8">
 
                 <div class="ngx-flex--row ">
-                  <div class="ngx-flex--col-12"><h2 class="text_in_box">{{boxtopic.name}}</h2></div>
+                  <div class="ngx-flex--col-1"></div>
+                  <div class="ngx-flex--col-10"><h2 class="text_in_box">{{boxtopic.name}}</h2></div>
+                  <div class="ngx-flex--col-1"></div>
                   <div class="ngx-flex--col-12">
 
                     <button [attr.data-bs-target]="'#modal' + boxtopic.id" type="button"
@@ -54,25 +57,25 @@
                 <div class="modal-body">
                   <div class="ngx-flex--row">
 
-                    <div class="ngx-flex--col-2"></div>
+                    <div class="ngx-flex--col-1 ngx-flex--col-md-2"></div>
 
-                    <div class="ngx-flex--col-8">
+                    <div class="ngx-flex--col-10 ngx-flex--col-md-8">
                       <img src="{{boxtopic.image}}" class="image_modal">
                       <h1 class="modal_title_main">{{boxtopic.name}}</h1>
                     </div>
                   </div>
 
-                  <div class="ngx-flex--col-2"></div>
+                  <div class="ngx-flex--col-1 ngx-flex--col-md-2"></div>
 
                   <div class="ngx-flex--row">
                     <div class="ngx-flex--col-10 ngx-flex--col-offset-1">
                       <div class="modal_doc_box" *ngFor="let modaldocs of boxtopic.titledoc">
                         <div class="ngx-flex--row">
 
-                          <div class="ngx-flex--col-1">
+                          <div class="ngx-flex--col-2 ngx-flex--col-md-1">
                             <img src="assets/image/filebasic.png" class="image_doc">
                           </div>
-                          <div class="ngx-flex--col-8">
+                          <div class="ngx-flex--col-9 ngx-flex--col-md-8">
                             <h3 class="title_doc">{{modaldocs}}</h3>
                           </div>
 
@@ -80,7 +83,9 @@
                       </div>
                     </div>
                   </div>
-
+                  <div class="modal-footer">
+                    <span class="decor_footer_modal_cover"></span>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,5 +1,7 @@
 export class Documentbox {
   image: string;
   title: string;
-  modallink: string;
+  id: string;
+  doctitlesource: string[];
+  linkdocsource: string [];
 }

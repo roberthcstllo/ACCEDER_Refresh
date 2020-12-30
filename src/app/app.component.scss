@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1200px) {
+  .column_menu {
+    display: none;
+    height: auto;
+  }
+  .menu_desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .column_menu {
+    display: none;
+    height: auto;
+  }
+  .menu_desktop {
+    display: none;
+  }
+}
+
+

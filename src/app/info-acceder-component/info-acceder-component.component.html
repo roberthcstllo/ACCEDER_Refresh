@@ -3,7 +3,7 @@
   <div class="ngx-flex--row">
 
 
-    <div class="ngx-flex--col-3">
+    <div class="ngx-flex--col-12 ngx-flex--col-md-3">
       <div class="box_info_acceder">
         <div>
           <img class="word_illustration" src="assets/image/wordinfo.png">
@@ -47,13 +47,14 @@
       </div>
 
     </div>
-    <div class="ngx-flex--col-9">
+
+    <div class="ngx-flex--col-12 ngx-flex--col-md-9">
       <h1 class="title_people">JUNTA DIRECTIVA</h1>
 
       <div class="ngx-flex--row">
 
 
-        <div class="ngx-flex--col-2" *ngFor="let boxpeople of positions">
+        <div class="ngx-flex--col-6 ngx-flex--col-sm-4  ngx-flex--col-md-3 ngx-flex--col-lg-2" *ngFor="let boxpeople of positions">
 
           <div class="box_people">
             <img class="photo_box" src="{{boxpeople.photo}}">
@@ -111,7 +112,7 @@
       <div class="ngx-flex--row">
 
 
-        <div class="ngx-flex--col-2" *ngFor="let boxteam of teams">
+        <div class="ngx-flex--col-6 ngx-flex--col-sm-4  ngx-flex--col-md-3 ngx-flex--col-lg-2" *ngFor="let boxteam of teams">
 
           <div class="ngx-flex--row">
 

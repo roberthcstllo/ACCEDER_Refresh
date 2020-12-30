@@ -49,9 +49,9 @@
   border-radius: 15px 15px 15px 15px;
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border-radius: 15px 15px 15px 15px;
-  -webkit-box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
-  -moz-box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
-  box-shadow: 5px 5px 15px -7px rgba(71,71,71,0.59);
+  -webkit-box-shadow: 5px 5px 15px -7px rgba(71, 71, 71, 0.59);
+  -moz-box-shadow: 5px 5px 15px -7px rgba(71, 71, 71, 0.59);
+  box-shadow: 5px 5px 15px -7px rgba(71, 71, 71, 0.59);
 }
 
 .photo_box {
@@ -136,4 +136,171 @@
   font-family: 'Roboto', sans-serif;
   font-size: 80%;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .box_info_acceder {
+    height: auto;
+    margin-top: 15%;
+  }
+
+  .word_illustration {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+
+
+  .text1_info {
+    font-size: 100%;
+  }
+
+  .text2_info {
+    font-size: 100%;
+  }
+
+  .icon_white_sm {
+    display: none;
+  }
+
+  .title_people {
+    font-size: 150%;
+    margin-top: 5%;
+  }
+
+
+
+
+
+  .name_modal {
+    font-size: 100%;
+  }
+
+
+  .mail_modal {
+    font-size: 100%;
+    margin-left: 2%;
+  }
+
+  .text_modal {
+    font-size: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+
+  .box_info_acceder {
+    height: auto;
+    margin-top: 15%;
+  }
+
+  .word_illustration {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+
+
+  .text1_info {
+    font-size: 100%;
+  }
+
+  .text2_info {
+    font-size: 100%;
+  }
+
+  .icon_white_sm {
+    width: 40%;
+    margin: 15%;
+  }
+
+  .title_people {
+    font-size: 150%;
+    margin-top: 20%;
+  }
+
+
+
+  .photo_modal {
+    width: 100%;
+    margin-left: 00%;
+    margin-top: 20%;
+  }
+
+
+  .name_modal {
+    font-size: 110%;
+  }
+
+  .position_modal {
+    font-size: 100%;
+  }
+
+  .mail_modal {
+    font-size: 100%;
+    margin-left: 2%;
+  }
+
+  .text_modal {
+    font-size: 90%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 760px) {
+
+
+  .box_info_acceder {
+    height: auto;
+    margin-top: 15%;
+  }
+
+  .word_illustration {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .icon_white_sm {
+    margin-bottom: 100%;
+  }
+  .title_people {
+    font-size: 100%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    font-weight: 500;
+  }
+
+
+
+  .photo_modal {
+    width: 100%;
+    margin-left: 00%;
+    margin-top: 20%;
+  }
+
+
+  .name_modal {
+    font-size: 110%;
+  }
+
+  .position_modal {
+    font-size: 100%;
+  }
+
+  .mail_modal {
+    font-size: 100%;
+    margin-left: 2%;
+  }
+
+  .text_modal {
+    font-size: 90%;
+  }
+
+
 }
