@@ -12,6 +12,7 @@ import { InfoAccederComponentComponent } from './info-acceder-component/info-acc
 import { ResourceComponentComponent } from './resource-component/resource-component.component';
 import { RedesComponentComponent } from './redes-component/redes-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
 
 
 
@@ -23,7 +24,8 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
     InfoAccederComponentComponent,
     ResourceComponentComponent,
     RedesComponentComponent,
-    FooterComponentComponent
+    FooterComponentComponent,
+    MenuMobileComponent
   ],
   imports: [
     BrowserModule,

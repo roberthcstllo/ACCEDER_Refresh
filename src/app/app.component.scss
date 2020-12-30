@@ -1,3 +1,7 @@
+.row_menu_mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .column_menu {
     display: none;
@@ -15,6 +19,15 @@
   }
   .menu_desktop {
     display: none;
+  }
+
+  .row_menu_mobile {
+    display: block;
+    border-top: solid 1px #cccccc;
+    background-color: white;
+    position: fixed;
+    top: 91vh;
+    width: 100vw;
   }
 }
 
